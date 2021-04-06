@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Basic|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div id="Overlay">
+    <div id="Prompt"></div>
+  </div>
+
+  <div class="Header">
+    <img id="Logo" src="../logo.png" />
+  </div>
+
+  <!--  TODO: errors  -->
+
+  <!--  Chinese  -->
+  <div class="InputRow">
+    <div class="InputHolder">
+      <div class="Title">Chinese</div>
+      <input type="text" class="Input" id="Chinese" />
+      <span id="Autofill">Autofill</span>
+    </div>
+  </div>
+
+  <!--  Pinyin  -->
+  <div class="InputRow">
+    <div class="InputHolder">
+      <div class="Title">Pinyin</div>
+      <input class="Input" id="Pinyin" type="text" />
+    </div>
+  </div>
+
+  <!--  English  -->
+  <div class="InputRow">
+    <div class="InputHolder">
+      <div class="Title">English</div>
+      <textarea class="Input" id="English" type="text" rows="3"></textarea>
+    </div>
+  </div>
+
+  <!--  Category  -->
+
+  <!--  Confidence / Status  -->
+  <div class="InputRow">
+    <div class="InputHolder">
+      <div class="Title">Confidence</div>
+      <div class="SliderHolder">
+        <div class="SliderLabel" id="ConfidenceLabel">To Learn</div>
+        <input type="range" min="0" max="10" step="0.1" value='0' class="Slider" id="Confidence" />
+      </div>
+    </div>
+  </div>
+
+  <!--  Buttons  -->
+  <div class="Actions">
+    <div class="Button" id="Cancel">Cancel</div>
+    <div class="Button" id="Save" tabindex="0">Save</div>
+  </div>
+
+	<script src="../packages/stitch.js"></script>
+	<script src="../mongodb.js"></script>
+	<script src="../phrase.js"></script>
+	<script src="../packages/jquery.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>

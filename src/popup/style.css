@@ -1,0 +1,203 @@
+
+html, body {
+  width: 320px;
+  margin: 0 auto;
+  background: #339a4f;
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Overlay */
+
+#Overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000b;
+  z-index: 100;
+}
+
+#Overlay #Prompt {
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  top: 50%;
+  position: fixed;
+  margin-top: -16px;
+  width: 100%;
+}
+
+/* Header */
+
+.Header {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Header img#Logo {
+  height: 36px;
+  margin: 24px calc(50% - 68px) 0;
+  cursor: pointer;
+}
+
+/* Input */
+
+.InputRow {
+  width: 100%;
+  min-height: 40px;
+  margin: 8px 8px;
+}
+
+.InputRow .InputHolder {
+  width: calc(100% - 8px);
+  margin-top: 28px;
+}
+
+.InputRow .InputHolder .Title {
+  position: absolute;
+  padding: 12px 8px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  /* originally animated */
+  margin-top: -28px;
+  font-size: 10px;
+}
+
+/* .InputRow .InputHolder:focus-within .Title,
+.InputRow .InputHolder.HasValue .Title {
+} */
+
+.InputRow .InputHolder .Input {
+  border: none;
+  outline: none;
+  resize: none;
+  background: #23833d;
+  border-radius: 6px;
+  width: calc(100% - 8px);
+  min-height: 40px;
+  padding: 8px 8px;
+  color: #FFF;
+  font-size: 14px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.InputRow .InputHolder .Input:focus {
+  background: #165c29;
+}
+
+.InputRow .InputHolder .Input#Chinese {
+  font-size: 36px;
+}
+
+.InputRow .InputHolder #Autofill {
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 19px;
+  text-align: center;
+  background: #0004;
+  border-radius: 0 6px 6px 0;
+  padding: 20px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.InputRow .InputHolder #Autofill:hover,
+.InputRow .InputHolder #Autofill:focus {
+  background: #0008;
+  outline: none;
+}
+
+.InputRow .InputHolder .SliderHolder {
+  background: #23833d;
+  border-radius: 6px;
+  width: calc(100% - 8px);
+  min-height: 42px;
+}
+
+.InputRow .InputHolder .SliderHolder:focus-within {
+  background: #165c29;
+}
+
+.SliderLabel {
+  background: #0004;
+  border-radius: 6px 0 0 6px;
+  min-width: 80px;
+  float: left;
+  color: #FFF;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  user-select: none;
+}
+
+.SliderLabel:hover {
+  background: #0008;
+}
+
+.Slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  outline: none; 
+  width: calc(92% - 80px);
+  height: 4px;
+  margin: 20px 4%;
+  border-radius: 4px;
+  float: left;
+}
+
+.Slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 18px; 
+  height: 18px; 
+  border-radius: 18px;
+  background: #FFF; 
+  cursor: pointer; 
+}
+
+/* Actions */
+
+.Actions {
+  height: 48px;
+  margin-top: 24px;
+}
+
+.Actions .Button {
+  width: 50%;
+  /* width: 100%; */
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  padding: 16px 0;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.Actions .Button#Cancel {
+  background: #999;
+}
+
+.Actions .Button#Cancel:hover {
+  background: #666;
+}
+
+.Actions .Button#Save {
+  background: #23833d;
+}
+
+.Actions .Button#Save:hover,
+.Actions .Button#Save:focus {
+  background: #165c29;
+  outline: none;
+}

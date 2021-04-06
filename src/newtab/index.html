@@ -1,0 +1,63 @@
+<html>
+
+<head>
+	<title>New Tab</title>
+	<link href="https://fonts.googleapis.com/css?family=Basic|Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div class="login-overlay">
+		<div class="login-popup">
+			<div class="prompt">
+				<input class="login" id="email" type="text" placeholder="Email" />
+				<input class="login" id="password" type="password" placeholder="Password" />
+				<p id="forgot-password-button" class="login-reset">Reset Password</p>
+			</div>
+			<div id="create-account-button" class="login left">
+				<p>Create Account</p>
+			</div>
+			<div id="login-button" class="login right">
+				<p>Login</p>
+			</div>
+		</div>
+  </div>
+  
+  <div id="logout">Logout</div>
+
+	<div class="container noselect">
+		<div class="row character">
+			<h1 id="character"></h1>
+		</div>
+		<div class="row confidence">
+			<div id="confidence">
+				<div class="col side left button" id="minus">
+					-
+				</div>
+				<div class="col center">
+					Confidence
+				</div>
+				<div class="col side right button" id="plus">
+					+
+				</div>
+			</div>
+		</div>
+		<div class="row pinyin">
+			<h2 id="pinyin"></h2>
+		</div>
+		<div class="row english">
+			<p id="english"></p>
+		</div>
+	</div>
+
+	<canvas id="canvas"></canvas>
+
+	<script src="../packages/stitch.js"></script>
+	<script src="../mongodb.js"></script>
+	<script src="../packages/jquery.min.js"></script>
+	<script src="./canvas.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>

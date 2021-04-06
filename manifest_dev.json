@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "Bamboo",
+	"version": "1.0.1",
+	"description": "Mandarin learning tool for English speakers.",
+	"background": {
+		"scripts": [
+			"./background/main.js"
+		],
+		"persistent": false
+	},
+	"chrome_url_overrides": {
+		"newtab": "./newtab/index.html"
+	},
+	"page_action": {
+		"default_popup": "./popup/index.html"
+	},
+	"permissions": [
+		"storage",
+		"declarativeContent"
+	],
+	"content_scripts": [
+		{
+			"css": [
+				"./content/style.css"
+			],
+			"matches": [
+				"https://app.bamboolearn.com/*",
+				"http://localhost:3000/*"
+			]
+		}
+	],
+	"icons": {
+		"16": "favicon.png"
+	}
+}
